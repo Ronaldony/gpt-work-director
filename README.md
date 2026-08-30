@@ -38,9 +38,39 @@
 
 ## 설치
 
+### npx skills 사용
+
+Node.js와 npm이 준비되어 있다면 다음 명령으로 Codex의 사용자 전역 스킬에 추가할 수 있습니다.
+
+```bash
+npx skills add Ronaldony/gpt-work-director --global --agent codex
+```
+
+현재 프로젝트에서만 사용하려면 `--global`을 빼고 실행합니다.
+
+```bash
+npx skills add Ronaldony/gpt-work-director --agent codex
+```
+
+전체 GitHub 주소를 사용해도 됩니다.
+
+```bash
+npx skills add https://github.com/Ronaldony/gpt-work-director --global --agent codex
+```
+
+저장소가 비공개이므로 명령을 실행하는 환경에 이 저장소를 읽을 수 있는 GitHub 인증이 설정되어 있어야 합니다. 설치 후 목록을 확인하거나 나중에 업데이트하려면 다음 명령을 사용하세요.
+
+```bash
+npx skills list --global --agent codex
+npx skills check
+npx skills update
+```
+
+`npx skills`의 옵션과 동작에 관한 자세한 내용은 [Skills CLI 문서](https://www.skills.sh/docs/cli)를 참고하세요.
+
 ### Skill Installer 사용
 
-Codex에서 다음과 같이 요청하는 방법이 가장 간단합니다.
+Codex 안에서 자연어로 설치하고 싶다면 다음과 같이 요청할 수 있습니다.
 
 ```text
 $skill-installer 다음 GitHub 저장소에서 gpt-work-director 스킬을 설치해줘:
