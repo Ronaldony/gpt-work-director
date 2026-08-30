@@ -1,0 +1,5 @@
+interface:
+  display_name: "GPT Work Director"
+  short_description: "Direct products through senior-led ChatGPT role teams"
+  default_prompt: "Use $gpt-work-director to direct this product, establish its senior-led role organization, and manage all detailed work through delegated ChatGPT project chats."
+
